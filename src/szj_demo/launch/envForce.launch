@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="szj_demo" type="pub_cart_pos_node" name="pub_cart_pos_node"/>
+    <node pkg="szj_demo" type="pub_envSim_node" name="pub_envSim_node" output="screen"/>
+
+</launch>

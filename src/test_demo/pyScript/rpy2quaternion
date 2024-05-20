@@ -1,0 +1,32 @@
+import numpy as np
+import math
+
+# 读取输入的RPY角
+roll = float(input("请输入roll角:"))
+pitch = float(input("请输入pitch角:"))
+yaw = float(input("请输入yaw角:"))
+
+# 将RPY角转换为旋转矩阵
+# roll_rad = math.radians(roll)
+# pitch_rad = math.radians(pitch)
+# yaw_rad = math.radians(yaw)
+roll_rad = roll
+pitch_rad = pitch
+yaw_rad = yaw
+R_x = np.array([[1, 0, 0],
+                [0, math.cos(roll_rad), -math.sin(roll_rad)],
+                [0, math.sin(roll_rad), math.cos(roll_rad)]])
+R_y = np.array([[math.cos(pitch_rad), 0, math.sin(pitch_rad)],
+                [0, 1, 0],
+                [-math.sin(pitch_rad), 0, math.cos(pitch_rad)]])
+R_z = np.array([[math.cos(yaw_rad), -math.sin(yaw_rad), 0],
+                [math.sin(yaw_rad), math.cos(yaw_rad), 0],
+                [0, 0, 1]])
+R = np.dot(R_z, np.dot(R_y, R_x))
+
+# 计算四元数并输出结果
+q0 = math.sqrt(1 + R[0][0] + R[1][1] + R[2][2]) / 2
+q1 = (R[2][1] - R[1][2]) / (4 * q0)
+q2 = (R[0][2] - R[2][0]) / (4 * q0)
+q3 = (R[1][0] - R[0][1]) / (4 * q0)
+print("四元数为：[", round(q0, 2), round(q1, 2), round(q2, 2), round(q3, 2), "]")

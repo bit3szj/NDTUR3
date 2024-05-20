@@ -1,0 +1,40 @@
+<launch>
+    <!-- 参数 -->
+    <!-- <arg name="robot_ip" value="192.168.1.50"/> -->
+    
+    <!-- 启动机器人驱动及move_it -->
+    <!-- <include file="$(find ur_robot_driver)/launch/ur3_bringup.launch">
+        <rosparam name="limited" value="true"/>
+        <arg name="robot_ip" value="$(arg robot_ip)"/>
+    </include> -->
+    <include file="$(find ur3_moveit_config)/launch/ur3_moveit_planning_execution.launch">
+        <rosparam name="limited" value="true"/>
+    </include>
+    <!-- 启动rviz可视化环境 -->
+    <include file="$(find ur3_moveit_config)/launch/moveit_rviz.launch">
+        <rosparam name="config" value="true"/>
+    </include>
+    <!-- 启动力传感器订阅程序 -->
+	<node
+		pkg="optoforce_etherdaq_driver"
+		type="etherdaq_node"
+		name="etherdaq_node"
+		args="--address 192.168.1.1 --rate 1000 --filter 5"
+	/>
+	<node
+		pkg="optoforce_etherdaq_driver"
+		type="etherdaq_subscriber"
+		name="etherdaq_subscriber"
+        output="screen"
+	/>
+
+    <!-- 启动力信号滤波节点 -->
+    <node pkg="wrench_filter" type="mean_filter_node" name="mean_filter_node"/>
+    <!-- 启动基座标系力滤波信号 -->
+    <node pkg="wrench_filter" type="compensate_wrench_base_filter_node" name="compensate_wrench_base_filter_node"/>
+    <!-- 启动重力补偿 -->
+    <include file="$(find gravity_compensate)/launch/gravity_compensate.launch"/>
+    <!-- 启动导纳控制节点 -->
+    <!-- <node pkg="force_control" type="admittance_control_node" name="admittance_control_node"/> -->
+    <node pkg="force_control" type="admittance_control_mass_node" name="admittance_control_mass_node"/>
+</launch>

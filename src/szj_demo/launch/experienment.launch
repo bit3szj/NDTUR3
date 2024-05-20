@@ -1,0 +1,11 @@
+<launch>
+    <param name="glbLinearMass" value="1"/>
+    <param name="glbLinearDamp" value="100"/>
+    <param name="glbForceTarget" value="10"/>
+    <param name="glbParaBp" value="15"/>
+    <param name="glbParaBv" value="0.9"/>
+  <node pkg="szj_demo" type="PDVariableAdmCtrl_node" name="PDVariableAdmCtrl_node" output="screen">
+
+
+  </node>
+</launch>

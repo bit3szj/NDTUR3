@@ -1,0 +1,7 @@
+<library path="lib/libszj_controller">
+    <class name="szj_controller/SzjController" type="szj_controller::Szj_controller" base_class_type="controller_interface::ControllerBase">
+        <description>
+            szj controller
+        </description>
+    </class>
+</library>
