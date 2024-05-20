@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/install
-
-Name: from_zero_force_trajectory
-Description: Description of from_zero_force_trajectory
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/install
-
-Name: cartesian_velocity_position_controller
-Description: Description of cartesian_velocity_position_controller
-Version: 0.0.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lcartesian_velocity_position_controller
-Requires: cartesian_state_msgs

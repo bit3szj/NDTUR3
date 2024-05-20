@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/devel
-
-Name: joint_state_msg
-Description: Description of joint_state_msg
-Version: 0.0.0
-Cflags: -I/home/szj/myTask/test_link_UR/devel/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs message_runtime

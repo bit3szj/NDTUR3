@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/devel
-
-Name: optoforce_etherdaq_driver
-Description: Description of optoforce_etherdaq_driver
-Version: 1.0.0
-Cflags: -I/home/szj/myTask/test_link_UR/src/force_sensor/etherdaq_ros/include
-Libs: -L${prefix}/lib -letherdaq_driver
-Requires: diagnostic_msgs diagnostic_updater geometry_msgs roscpp

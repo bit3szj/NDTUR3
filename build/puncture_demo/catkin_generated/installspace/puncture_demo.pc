@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/install
-
-Name: puncture_demo
-Description: Description of puncture_demo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

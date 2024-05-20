@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/devel
-
-Name: ur_dashboard_msgs
-Description: Description of ur_dashboard_msgs
-Version: 2.1.2
-Cflags: -I/home/szj/myTask/test_link_UR/devel/include
-Libs: -L${prefix}/lib 
-Requires: actionlib_msgs message_runtime std_msgs

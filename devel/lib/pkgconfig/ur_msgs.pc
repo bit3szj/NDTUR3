@@ -1,8 +1,0 @@
-prefix=/home/szj/myTask/test_link_UR/devel
-
-Name: ur_msgs
-Description: Description of ur_msgs
-Version: 1.3.4
-Cflags: -I/home/szj/myTask/test_link_UR/devel/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs message_runtime std_msgs

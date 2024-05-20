@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/szj_demo.dir/src/szj_demo.cpp.o  -o /home/szj/myTask/test_link_UR/devel/lib/puncture_demo/szj_demo 
