@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/pathPubVel_node.dir/src/pathPubVel.cpp.o  -o /home/szj/myTask/test_link_UR/devel/lib/szj_controller/pathPubVel_node 

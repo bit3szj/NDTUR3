@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/gravity_identify.dir/src/gravity_identify.cpp.o  -o /home/szj/myTask/test_link_UR/devel/lib/gravity_compensate/gravity_identify 

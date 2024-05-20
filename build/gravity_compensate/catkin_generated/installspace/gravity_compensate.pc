@@ -1,0 +1,8 @@
+prefix=/home/szj/myTask/test_link_UR/install
+
+Name: gravity_compensate
+Description: Description of gravity_compensate
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs std_msgs moveit_core moveit_ros_planning_interface

@@ -1,0 +1,8 @@
+prefix=/home/szj/myTask/test_link_UR/install
+
+Name: ros_qt_demo
+Description: Description of ros_qt_demo
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

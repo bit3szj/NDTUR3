@@ -1,0 +1,17 @@
+<launch>
+	<node
+		pkg="optoforce_etherdaq_driver"
+		type="etherdaq_node"
+		name="etherdaq_node"
+		args="--address 192.168.1.1 --rate 100 --filter 5"
+	/>
+	<node
+		pkg="optoforce_etherdaq_driver"
+		type="etherdaq_subscriber"
+		name="etherdaq_subscriber"
+		output="screen"
+	/>
+    <node pkg="wrench_filter" type="mean_filter_node" name="mean_filter_node"/>
+	<node pkg="wrench_filter" type="compensate_wrench_base_filter_node" name="compensate_wrench_base_filter_node"/>
+	<!-- <node pkg="wrench_filter" type="wrench2tool_node" name="wrench2tool_node"/> -->
+</launch>

@@ -1,0 +1,35 @@
+# CMake generated Testfile for 
+# Source directory: /home/szj/myTask/test_link_UR/src
+# Build directory: /home/szj/myTask/test_link_UR/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("gtest")
+subdirs("msg/cartesian_state_msgs")
+subdirs("UR_robot/fmauch_universal_robot/universal_robots")
+subdirs("UR_robot/Universal_Robots_ROS_Driver/ur_dashboard_msgs")
+subdirs("UR_robot/ur_msgs")
+subdirs("msg/joint_state_msg")
+subdirs("force_sensor/etherdaq_ros")
+subdirs("controller/szj_controller")
+subdirs("test_demo")
+subdirs("controller/force_control")
+subdirs("from_zero_force_trajectory")
+subdirs("UR_robot/fmauch_universal_robot/ur_description")
+subdirs("UR_robot/fmauch_universal_robot/ur_gazebo")
+subdirs("controller/cartesian_velocity_position_controller")
+subdirs("UR_robot/fmauch_universal_robot/ur_kinematics")
+subdirs("controller/admittance_controller")
+subdirs("force_sensor/gravity_compensate")
+subdirs("szj_demo")
+subdirs("force_sensor/wrench_filter")
+subdirs("UR_robot/fmauch_universal_robot/ur10_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur10e_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur16e_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur3_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur3e_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur5_moveit_config")
+subdirs("UR_robot/fmauch_universal_robot/ur5e_moveit_config")
+subdirs("UR_robot/Universal_Robots_ROS_Driver/ur_robot_driver")
+subdirs("controller/test_controller")
+subdirs("UR_robot/Universal_Robots_ROS_Driver/ur_calibration")

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>admittance_controller</name>
+  <version>0.0.0</version>
+  <description>The admittance_controller package</description>
+
+  <maintainer email="davideferr@unimore.it">Davide Ferrari</maintainer>
+
+  <license>BSD-3</license>
+    
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>roscpp</depend>
+  <depend>eigen</depend>
+  <depend>actionlib</depend>
+  <depend>moveit_core</depend>
+  <depend>moveit_ros_planning_interface</depend>
+
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>control_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>controller_manager_msgs</depend>
+
+</package>

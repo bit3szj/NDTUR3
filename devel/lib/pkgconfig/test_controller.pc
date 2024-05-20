@@ -1,0 +1,8 @@
+prefix=/home/szj/myTask/test_link_UR/devel
+
+Name: test_controller
+Description: Description of test_controller
+Version: 0.0.1
+Cflags: -I/home/szj/myTask/test_link_UR/src/controller/test_controller/include
+Libs: -L${prefix}/lib -ltest_controller
+Requires: controller_interface hardware_interface kdl_parser roscpp

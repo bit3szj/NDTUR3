@@ -1,0 +1,8 @@
+prefix=/home/szj/myTask/test_link_UR/install
+
+Name: demo
+Description: Description of demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
